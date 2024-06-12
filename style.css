@@ -1,0 +1,619 @@
+body{
+    margin: 0;
+    font-family: "Rubik-Regular", 'Times New Roman';
+    overflow-x: hidden;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(Rubik-VariableFont_wght.ttf);
+}
+
+.title{
+    position: relative;
+    left: 30px;
+    top: 25px;
+    font-size: 45px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.longDay{
+    position: relative;
+    text-align: left;
+    font-size: 32px;
+    left: 30px;
+    top: 25px;
+    color: white;
+}
+
+.pageContainer{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.openingPage{
+    background-image: url(opening_Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.paragraphTitle{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 20.5vh;
+    font-size: 45px;
+    color: rgb(241, 241, 241);
+}
+
+.paragraphopening{
+    position: relative;
+    top: 24vh;
+    left: 50vh;
+    width: 50vw;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+.learnMoreBtn{
+    position: relative;
+    top: 42vh;
+    font-size: 20px;
+    width: 220px;
+    font-weight: bold;  
+    cursor: pointer;
+    border: none;
+    margin: .1em;
+    height: 45px;
+}
+
+.flightPage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(flightBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.flightTitle{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.planeimg{
+    position: relative;
+    top: 18px;
+    left: 40%;
+    height: 600px;
+}
+
+.planeAnim{
+    animation: flying 1.2s linear;
+}
+
+.flightPlan{
+    position: relative;
+    bottom: 530px;
+    width: 650px;
+    left: 30px;
+    height: 200px;
+    background: linear-gradient(#007bff, #004da0);
+    border: #003b79 solid;
+    border-radius: 25px;
+    text-align: left;
+}
+
+.titlePlan{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    position: relative;
+    top: 32px;
+    left: 25px;
+}
+
+.datePlan{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 25px;
+    top: 53px;
+    font-size: 17px;
+}
+
+.pricePlan{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 25px;
+    top: 55px;
+}
+
+.airlinesPlan{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 25px;
+    top: 56px;
+}
+
+.imagePlan{
+    width: 120px;
+    position: relative;
+    left: 450px;
+    bottom: 60px;
+}
+
+.flightPlanBtn{
+    position: relative;
+    top: -550px;
+    left: 380px;
+}
+
+
+.arrival{
+    bottom: 480px;
+}
+
+.destinationPage{
+    background-image: url(backgroundBlur.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.destinationTitle{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    height: 46px;
+    position: relative;
+    top: 170px;
+}
+
+.choicesMini:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+.targetTitle{
+    font-size: 35px;
+    position: relative;
+    bottom: 42px;
+    color: white;
+    font-style: italic;
+    font-family: Rubik-Regular;
+}
+
+.targetBackgroundCont{
+    width: 100vw;
+    height: 60vh;
+    margin-top: -46px;
+    background-color: rgba(30, 30, 30, 0.68);
+}
+
+.targetBackgroundImg{
+    position: relative;
+    top: 15px;
+    height: 50vh;
+    max-width: 620px;
+}
+    
+
+.choicesContainer{
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+    display: flex;
+    row-gap: 400px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.choicesMini{
+    width: 150px;
+    height: 150px;
+}
+
+.choicesMiniTitle{
+    font-size: 15px;
+    color: rgb(211, 211, 211);
+    height: 20px;
+    position: relative;
+    bottom: 24px;
+    background-color: rgba(66, 66, 66, 0.769);
+}
+
+.switches{
+    height: 100px;
+    width: 40px;
+    border: 0px;
+    background-color: rgba(173, 173, 173, 0.450);
+}
+
+.switches:hover{
+    cursor: pointer;
+    background-color: rgba(217, 217, 217, 0.523);
+}
+
+.switches:active{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.arrowImg{
+    width: 15px;
+}
+
+.seeMaps{
+    position: relative;
+    bottom: 68vh;
+    left: 80vw;
+    width: 100px;
+}
+
+.titleMaps{
+    color: white;
+    font-size: 20px;
+}
+
+.mapsImg{
+    width: 100px;
+}
+
+.seeMaps:hover{
+    cursor: pointer;
+}
+
+
+
+.hotelPage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(hotelBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hotelSpecs{
+    border-radius: 10px;
+    background: rgb(42, 42, 42);
+    height: 440px;
+    width: 320px;
+}
+
+.hotelTitle{
+    position: relative;
+    left: 0;
+    text-align: center;
+}
+
+.hotelImg{
+    width: 320px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+}
+
+.hotelSpecsContainer{
+    top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+}
+
+.hotelDetails{
+    border: 0px;
+    width: 130px;
+    height: 35px;
+    font-size: 17px;
+    color: rgb(236, 236, 236);
+    background-color: rgb(255, 48, 48);
+    border-radius: 5px;
+    position: relative;
+    font-weight: bold;
+    bottom: 20px;
+}
+
+.hotelDetails:hover{
+    cursor: pointer;
+    background-color: rgb(177, 32, 32);
+}
+
+.hotelName{
+    position: relative;
+    font-size: 20px;
+    bottom: 10px;
+    height: 50px;
+    font-style: italic;
+    color: rgb(230, 230, 230);
+}
+
+.hotelPrice{
+    color: white;
+    font-size: 17px;
+}
+
+
+
+.totalPage{
+    background-image: url(total_Image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.totalTitlePage{
+    text-align: center;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.totalContainer{
+    background-color: rgba(57, 57, 57, 0.750);
+    width: 400px;
+    height: 110px;
+    position: relative;
+    left: 120px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.middleCont{
+    left: 430px;
+}
+
+.totalDescriptionCont{
+    position: relative;
+    top: 50px;
+    width: 100vw;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.totalTitle{
+    color: white;
+    text-align: left;
+    position: relative;
+    left: 20px;
+    top: 15px;
+    font-size: 25px;
+}
+
+.totalPrice{
+    color: white;
+    text-align: left;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    font-size: 20px;
+}
+.detailTotal{
+    top: 40px;
+}
+.totalImage{
+    position: relative;
+    bottom: 32px;
+    left: 110px;
+    width: 70px;
+}
+
+
+
+
+.learnMoreBtn {
+    --b: 2px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: rgb(214, 214, 214);
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000006d 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #e7e7e700;
+    outline-offset: .2em;
+  }
+  .learnMoreBtn:hover,
+  .learnMoreBtn:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  .learnMoreBtn:active {
+    background: var(--c);
+    color: #000000;
+  }
+
+@keyframes flying{
+    0%{
+        transform: translateY(100%) translateX(92.5%) scale(0, 0);
+    }
+}
+  
+
+@media (max-width : 550px) {
+    .title{
+        font-size: 35px;
+        left: 15px;
+        top: 10px;
+    }
+    .longDay{
+        font-size: 25px;
+        left: 15px;
+        top: 10px;
+    }
+    .paragraphTitle{
+        font-size: 35px;
+        top: 22.5vh;
+        width: 85vw;
+        left: 7.5vw;
+    }
+    .paragraphopening{
+        font-size: 15px;
+        left: 15%;
+        top: 25vh;
+        width: 70vw;
+    }
+    .learnMoreBtn{
+        width: 150px;
+        top: 30vh;
+        font-size: 15px;
+    }
+    .flightPlan{
+        position: relative;
+        bottom: 530px;
+        width: 200px;
+        left: 30px;
+        height: 200px;
+        background: linear-gradient(#007bff, #004da0);
+        border: #003b79 solid;
+        border-radius: 25px;
+        text-align: left;
+    }
+    .titlePlan{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        position: relative;
+        top: 18px;
+        left: 15px;
+    }
+    .datePlan{
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: 15px;
+        top: 53px;
+        font-size: 14px;
+    }
+    .pricePlan{
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: 15px;
+        top: 55px;
+        font-size: 14px;
+    }
+    .airlinesPlan{
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: 15px;
+        top: 56px;
+        font-size: 14px;
+    }
+    .imagePlan{
+        width: 45px;
+        position: relative;
+        left: 35%;
+        top: 35%;
+    }
+    .flightPlanBtn{
+        position: relative;
+        top: -560px;
+        left: 27%;
+        width: 140px;
+    }
+    .planeimg{
+        position: relative;
+        top: 140px;
+        left: 28%;
+        height: 350px;
+        margin-bottom: 230px;
+    }
+    .arrival{
+        bottom: 480px;
+    }
+    .targetBackgroundCont{
+        position: relative;
+        max-height: 40vh;
+        top: 50px;
+    }
+    .choicesMini{
+        height: 17vw;
+        width: 17vw;
+    }
+    .choicesMiniTitle{
+        font-size: 10px;
+    }
+    .switches{
+        height: 17vw;
+    }
+    .choicesContainer{
+        top: 200px;
+        left: 2vw;
+    }
+    .targetTitle{
+        bottom: 0px;
+        top: 135px;
+    }
+    .seeMaps{
+        visibility: hidden;
+    }
+    .hotelSpecsContainer{
+        gap: 5px;
+        top: 120px;
+    }
+    .hotelSpecs{
+        width: 200px;
+        height: 350px;
+    }
+    .hotelImg{
+        width: 130px;
+        height: 100px;
+    }
+    .hotelDetails{
+        width: 100px;
+        top: 0px;
+    }
+    .hotelName{
+        top: 25px;
+        font-size: 15px;
+    }
+    .hotelPrice{
+        position: relative;
+        top: 50px;
+    }
+    .totalImage{
+        top: 40px;
+        left: 0px;
+        width: 40px;
+    }
+    .totalContainer{
+        left: 2vw;
+        height: 130px;
+        width: 200px;
+    }
+    .totalTitle{
+        font-size: 20px;
+    }
+    .totalPrice{
+        font-size: 16px;
+    }
+    .detailTotal{
+        top: -75px;
+        left: 25vw;
+    }
+}

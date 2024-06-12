@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Plans</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="website_logo.jpg">
+</head>
+<body>
+    <div class="allPageContainer">
+        <div class="openingPage pageContainer">
+            <div class="title">Malaysia Travel</div>
+            <div class="longDay">5 Hari 4 Malam</div>
+            <div class="paragraphTitle">Nikmati Wisata Malaysia <i>Terbaik!</i></div>
+            <div class="paragraphopening">Nikmati liburan selama 5 hari 4 malam di Malaysia dengan suasana paling menarik, 
+                juga dengan berbagai tempat wisata terkenal lainnya!</div>
+            <button class="learnMoreBtn" onclick="nextPage()">Lihat Lebih Lanjut</button>
+        </div>
+        
+        <div class="flightPage pageContainer" id="flightPage">
+            <div class="title flightTitle">Penerbangan (5 Hari)</div>
+            
+            <img src="plane_Image.png" alt="Plane Image" class="planeimg" id="planeimg">
+            <div class="departure flightPlan">
+                <div class="titlePlan">Keberangkatan</div>
+                <div class="datePlan">Sabtu, 29 Juni 2024</div>
+                <div class="pricePlan">Rp 736.594 / PAX</div>
+                <div class="airlinesPlan">Maskapai Batik Air</div>
+                <img src="departures.png" alt="pesawat TakeOff" class="imagePlan">
+            </div>
+            <div class="arrival flightPlan">
+                <div class="titlePlan">Kedatangan</div>
+                <div class="datePlan">Rabu, 3 Juli 2024</div>
+                <div class="pricePlan">Rp 744.800 / PAX</div>
+                <div class="airlinesPlan">Maskapai Batik Air</div>
+                <img src="arrivals.png" alt="pesawat Landing" class="imagePlan">
+            </div>
+
+            <button class="learnMoreBtn flightPlanBtn"><a href="https://www.traveloka.com/id-id/flight/route/Jakarta-Kuala-Lumpur.CGK.KUL">Lihat Detail</a></button>
+        </div>
+
+        <div class="destinationPage pageContainer">
+            <div class="title destinationTitle">Destinasi Wisata</div>
+            <div class="targetBackgroundCont">
+                <img src="petronas_Image.jpg" alt="" class="targetBackgroundImg" id="targetBackgroundImg">
+            </div>
+            <div class="targetTitle" id="targetTitle">Petronas</div>
+
+            <div class="choicesContainer">
+                <button class="swithChoicesLeft switches" onclick="changeChoices('left')"><img src="left-arrow.png" alt="" class="arrowImg"></button>
+                <div class="choicesMini" id="miniPlan1" onclick="changeDisplay()">
+                    <img src="petronas_Image.jpg" alt="" class="choicesMini">
+                    <div class="choicesMiniTitle">Petronas</div>
+                </div> 
+                <div class="choicesMini" id="miniPlan2" onclick="changeDisplay()">
+                    <img src="alor_Image.jpg" alt="" class="choicesMini">
+                    <div class="choicesMiniTitle">Alor Street</div>
+                </div>
+                <div class="choicesMini" id="miniPlan3" onclick="changeDisplay()">
+                    <img src="petalingStreet_Image.jpg" alt="" class="choicesMini">
+                    <div class="choicesMiniTitle">Petaling Street</div>
+                </div>
+                <div class="choicesMini" id="miniPlan4" onclick="changeDisplay()">
+                    <img src="batuCaves_Image.jpg" alt="" class="choicesMini">
+                    <div class="choicesMiniTitle">Batu Caves</div>
+                </div>
+                <div class="choicesMini" id="miniPlan5" onclick="changeDisplay()">
+                    <img src="gentingPremiumOutlet_Image.jpg" alt="" class="choicesMini">
+                    <div class="choicesMiniTitle">Genting Outlet</div>
+                </div>
+                <button class="swithChoicesRight switches" onclick="changeChoices('right')"><img src="right-arrow.png" alt="" class="arrowImg"></button>
+            </div>
+            
+            <div class="seeMaps" title="Lihat Lokasi">
+                <a href="https://www.google.com/maps/dir//Petronas+Twin+Tower,+Lower+Ground+Level,+Kuala+Lumpur+City+Centre,+50088+Kuala+Lumpur,+Malaysia/@3.157466,101.6291619,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31cc37d12d669c1f:0x9e3afdd17c8a9056!2m2!1d101.7115639!2d3.1574693?entry=ttu" id="mapsHREFDetails">
+                    <img src="maps_Image.png" alt="" class="mapsImg">
+                    <div class="titleMaps">Lihat Lokasi</div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hotelPage pageContainer">
+            <div class="title hotelTitle">Penginapan</div>
+
+            <div class="hotelSpecsContainer">
+                <div class="hotelSpecs">
+                    <img class="hotelImg" src="MayaKL_Image.jpg"></img>
+                    <button class="hotelDetails"><a href="https://www.hotelmaya.com.my/">Lihat Hotel</a></button>
+                    <div class="hotelName">Hotel Maya Kuala Lumpur City Centre</div>
+                    <div class="hotelPrice">Rp 949.484 / Hari</div>
+                </div>
+                <div class="hotelSpecs">
+                    <img class="hotelImg" src="StripesKL_Image.png"></img>
+                    <button class="hotelDetails"><a href="https://www.stripeskl.com/">Lihat Hotel</a></button>
+                    <div class="hotelName">Hotel Stripes Kuala Lumpur</div>
+                    <div class="hotelPrice">Rp 1.309.618 / Hari</div>
+                </div>
+                <div class="hotelSpecs">
+                    <img class="hotelImg" src="IONDelemen_Image.png"></img>
+                    <button class="hotelDetails"><a href="https://www.iondelemenhotels.com/">Lihat Hotel</a></button>
+                    <div class="hotelName">Grand ION Delemen Hotel</div>
+                    <div class="hotelPrice">Rp 764.423 / Hari</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="totalPage pageContainer">
+            <div class="title totalTitlePage">Total Harga</div>
+
+            <div class="totalDescriptionCont">
+                <div class="totalContainer">
+                    <div class="totalTitle">Penerbangan</div>
+                    <div class="totalPrice">Rp 6.000.000</div>
+                    <img class="totalImage" src="departures.png"></img>
+                </div>
+                <div class="totalContainer">
+                    <div class="totalTitle">Hotel</div>
+                    <div class="totalPrice">Rp 5.100.000</div>
+                    <img class="totalImage" src="hotel_Img.png"></img>
+                </div>          
+                <div class="totalContainer">
+                    <div class="totalTitle">Konsumsi</div>
+                    <div class="totalPrice">Rp 6.000.000</div>
+                    <img class="totalImage" src="food_Img.png"></img>
+                </div>        
+                <div class="totalContainer">
+                    <div class="totalTitle">Transportasi</div>
+                    <div class="totalPrice">Rp 3.500.000</div>
+                    <img class="totalImage" src="transport_Img.png"></img>
+                </div>       
+                <div class="totalContainer middleCont">
+                    <div class="totalTitle">Wisata</div>
+                    <div class="totalPrice">Rp 5.600.000</div>
+                    <img class="totalImage" src="destination_Img.png"></img>
+                </div>       
+            </div>
+
+            <button class="detailTotal learnMoreBtn"><a href="https://docs.google.com/document/d/1qs1o5YTnAHzFLfEtw0RWnilyenOh_Ye-_1jhIIreZNg/edit?usp=sharing">Detail Perjalanan</a></button>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
