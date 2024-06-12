@@ -616,4 +616,7 @@ a{
         top: -75px;
         left: 25vw;
     }
+    html{
+        scroll-snap-type: proximity;
+    }
 }
