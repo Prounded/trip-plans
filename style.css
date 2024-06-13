@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: "Rubik-Regular", 'Times New Roman';
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 html{
@@ -50,7 +51,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
     width: 100vw;
     height: 100vh;
 }
@@ -91,7 +92,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
 }
 
 .flightTitle{
@@ -175,7 +176,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
 }
 
 .destinationTitle{
@@ -290,7 +291,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
 }
 
 .hotelSpecs{
@@ -363,7 +364,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
 }
 
 .totalTitlePage{
