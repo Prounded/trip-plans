@@ -95,6 +95,11 @@ function changeDisplay() {
 }
 
 document.addEventListener('scroll', () => {
+    if (window.scrollX > 0) {
+        window.scroll({
+            left: 0,
+        });
+    }
     const flight = document.getElementById('flightPage');
     const rect = flight.getBoundingClientRect();
     const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
